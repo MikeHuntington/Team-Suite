@@ -16,6 +16,24 @@ class Challenges extends Component {
             <Text style={styles.challengeText}>Fitness Challenge</Text>
           </View>
         </Image>
+
+        <Image style={styles.challengeImage} source={require('../assets/programmer.jpg')}>
+          <View style={styles.challengeTextHolder}>
+            <Text style={styles.challengeText}>Bug Chase</Text>
+          </View>
+        </Image>
+
+        <Image style={styles.challengeImage} source={require('../assets/retail.jpg')}>
+          <View style={styles.challengeTextHolder}>
+            <Text style={styles.challengeText}>Rewards Signup</Text>
+          </View>
+        </Image>
+
+        <Image style={styles.challengeImage} source={require('../assets/callcenter.jpg')}>
+          <View style={styles.challengeTextHolder}>
+            <Text style={styles.challengeText}>Holiday Sales</Text>
+          </View>
+        </Image>
       </ScrollView>
     )
   }
@@ -33,7 +51,10 @@ const styles = StyleSheet.create({
     height:300,
     width:width - 20,
     marginTop:10,
-    justifyContent:'flex-end'
+    marginBottom:10,
+    justifyContent:'flex-end',
+    borderWidth:1,
+    borderColor:'#6A6A6A'
   },
   challengeTextHolder: {
     height:45,
