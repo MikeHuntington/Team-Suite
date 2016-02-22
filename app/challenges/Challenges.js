@@ -1,6 +1,16 @@
 'use strict';
 
-import React, {View, Image, Text, ScrollView, StyleSheet, Dimensions, Component} from 'react-native';
+import React, {
+  View,
+  Image,
+  Text,
+  ScrollView,
+  TouchableOpacity,
+  StyleSheet,
+  Dimensions,
+  Component} from 'react-native';
+import ChallengeDetail from './ChallengeDetail';
+
 var {height, width} = Dimensions.get('window');
 
 class Challenges extends Component {
@@ -11,11 +21,13 @@ class Challenges extends Component {
   render() {
     return (
       <ScrollView style={[styles.container, this.props.style]}>
-        <Image style={styles.challengeImage} source={require('../assets/fitness.jpg')}>
-          <View style={styles.challengeTextHolder}>
-            <Text style={styles.challengeText}>Fitness Challenge</Text>
-          </View>
-        </Image>
+        <TouchableOpacity onPress={() => this.viewChallenge()}>
+          <Image style={styles.challengeImage} source={require('../assets/fitness.jpg')}>
+            <View style={styles.challengeTextHolder}>
+              <Text style={styles.challengeText}>Fitness Challenge</Text>
+            </View>
+          </Image>
+        </TouchableOpacity>
 
         <Image style={styles.challengeImage} source={require('../assets/programmer.jpg')}>
           <View style={styles.challengeTextHolder}>
@@ -36,6 +48,13 @@ class Challenges extends Component {
         </Image>
       </ScrollView>
     )
+  }
+
+  viewChallenge() {
+    this.props.router.navigator.push({
+      component:ChallengeDetail,
+      title:'Fitness'
+    });
   }
 }
 

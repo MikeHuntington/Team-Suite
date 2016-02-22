@@ -50,6 +50,7 @@ const styles = StyleSheet.create({
     borderBottomWidth:1,
     borderColor:'#EEE',
     padding:10,
+    paddingTop:0,
     paddingLeft:0,
     marginBottom:15
   },

@@ -24,6 +24,7 @@
 		3B2B07701D4D4B84A1B20A05 /* libRNBlur.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F108E9553B84173971EF563 /* libRNBlur.a */; };
 		430110A21C78258500223EE4 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 430110A11C78258500223EE4 /* Roboto-Thin.ttf */; };
 		430110A41C78279900223EE4 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 430110A31C78279900223EE4 /* Roboto-Light.ttf */; };
+		43A388631C7BA18000BD8AA8 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 43A388621C7BA18000BD8AA8 /* Roboto-Medium.ttf */; };
 		542F157DFD364F68829CFDE5 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 99EB4DA3DAB34CAF860536DC /* EvilIcons.ttf */; };
 		5DAAC9CC53CD474789215568 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D622F6B703BA42EFB00DF63B /* Ionicons.ttf */; };
 		615D2651680344F782A09D26 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 29D4004E99F244238AA89E61 /* MaterialIcons.ttf */; };
@@ -155,6 +156,7 @@
 		29D4004E99F244238AA89E61 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 0; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 		430110A11C78258500223EE4 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		430110A31C78279900223EE4 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		43A388621C7BA18000BD8AA8 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		4FAF69240529412FBC84AD07 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 0; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
 		6346071236A742C5876BAD50 /* libRNVectorIcons.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 0; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNVectorIcons.a; sourceTree = "<group>"; };
 		6F108E9553B84173971EF563 /* libRNBlur.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNBlur.a; sourceTree = "<group>"; };
@@ -274,6 +276,7 @@
 		13B07FAE1A68108700A75B9A /* Meetify */ = {
 			isa = PBXGroup;
 			children = (
+				43A388621C7BA18000BD8AA8 /* Roboto-Medium.ttf */,
 				430110A31C78279900223EE4 /* Roboto-Light.ttf */,
 				430110A11C78258500223EE4 /* Roboto-Thin.ttf */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
@@ -608,6 +611,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43A388631C7BA18000BD8AA8 /* Roboto-Medium.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				430110A41C78279900223EE4 /* Roboto-Light.ttf in Resources */,

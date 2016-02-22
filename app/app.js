@@ -23,8 +23,7 @@ class App extends Component {
     super();
 
     this.state = {
-      menuIcon:null,
-      view:Profile
+      menuIcon:null
     }
 
     Icon.getImageSource('navicon', 30, 'red').then((source) => this.setState({ menuIcon: source }));
@@ -69,6 +68,7 @@ class App extends Component {
           navigationBar={<Navigator.NavigationBar routeMapper={NavigationBarRouteMapper} style={styles.navBar} />}
           renderScene={this.renderScene.bind(this)}
           initialRoute={{
+            component:Profile,
             title: 'My Timeline'
           }}/>
       </Drawer>
@@ -76,21 +76,21 @@ class App extends Component {
   }
 
   renderScene(route, navigator) {
-    return (
-      <this.state.view style={styles.navContainer}/>
-    )
+    if(route.component) {
+      return (
+        <route.component style={styles.navContainer} router={{route:route, navigator:navigator}}/>
+      )
+    }
+
+    return null;
   }
 
   navigateToView(data) {
 
-    this.setState({
-      view:data.route.component
-    });
-
-     this.refs.router.resetTo({
-       title:data.route.title
-     });
-
+   this.refs.router.resetTo({
+     component:data.route.component,
+     title:data.route.title
+   });
 
      this.toggleDrawer();
    }
@@ -133,11 +133,7 @@ const styles = StyleSheet.create({
     paddingTop: 62
   },
   navBar: {
-    backgroundColor: 'rgba(255, 255, 255, 0.95)',
-    shadowColor: "#000000",
-    shadowOpacity: 0.5,
-    shadowRadius: 1,
-    shadowOffset:{x:0,y:0}
+    backgroundColor: 'rgba(255, 255, 255, 0.95)'
   },
   navBarText: {
     fontSize: 19,
@@ -152,6 +148,17 @@ const styles = StyleSheet.create({
   navBarLeftButton: {
     paddingLeft: 10,
     paddingTop:5
+  },
+  backButton:{
+    flexDirection:'row',
+    justifyContent:'center'
+  },
+  backText: {
+    fontSize:17,
+    paddingLeft:7
+  },
+  backIcon: {
+    marginTop:6
   }
 });
 
@@ -172,10 +179,13 @@ var NavigationBarRouteMapper = {
     return (
       <TouchableOpacity
         onPress={() => navigator.pop()}
-        style={styles.navBarLeftButton}>
-        <Text style={[styles.navBarText, styles.navBarButtonText]}>
-          {previousRoute.title}
-        </Text>
+        style={[styles.navBarLeftButton, {paddingTop:0}]}>
+        <View style={styles.backButton}>
+          <Icon style={styles.backIcon} name="ios-arrow-back" size={25} color="#6A6A6A"/>
+          <Text style={[styles.navBarText, styles.navBarButtonText, styles.backText]}>
+            {previousRoute.title}
+          </Text>
+        </View>
       </TouchableOpacity>
     );
   },
