@@ -2,6 +2,7 @@
 
 import React, {View, TouchableHighlight, Text, StyleSheet, Component} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
+import Events from '../lib/events';
 
 class MenuButton extends Component {
   constructor() {
@@ -10,13 +11,22 @@ class MenuButton extends Component {
 
   render() {
     return(
-      <TouchableHighlight underlayColor="rgba(255,255,255,0.2)">
+      <TouchableHighlight onPress={this.onPress.bind(this)} underlayColor="rgba(255,255,255,0.2)">
         <View style={styles.container}>
           <Icon style={styles.icon} name={this.props.icon} color="#FFF" size={35} />
           <Text style={styles.menuText}>{this.props.children}</Text>
         </View>
       </TouchableHighlight>
     )
+  }
+
+  onPress(){
+    Events.trigger('MenuItemPressed', {
+      route:{
+        component:this.props.view,
+        title:this.props.children.toString()
+      }
+    });
   }
 }
 
@@ -35,12 +45,11 @@ const styles = StyleSheet.create({
     fontFamily:'Roboto-Light',
     fontSize:25,
     color:'#FFF',
-    flex:10,
-    paddingTop:3
+    flex:1,
+    paddingTop:3,
+    paddingLeft:10
   },
-  icon: {
-    flex:2
-  }
+  icon: {}
 });
 
 module.exports = MenuButton;
