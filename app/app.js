@@ -21,12 +21,6 @@ class App extends Component {
 
   constructor() {
     super();
-
-    this.state = {
-      menuIcon:null
-    }
-
-    Icon.getImageSource('navicon', 30, 'red').then((source) => this.setState({ menuIcon: source }));
   }
 
   componentWillMount() {
