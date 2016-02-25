@@ -181,7 +181,7 @@ const styles = StyleSheet.create({
   },
   headerContainer: {
     position:'relative',
-    height:150,
+    height:300,
     marginBottom:20
   },
   blur: {
@@ -190,7 +190,7 @@ const styles = StyleSheet.create({
   },
   map: {
     position: 'absolute',
-    height:200,
+    height:360,
     top:0,
     left:0,
     right:0

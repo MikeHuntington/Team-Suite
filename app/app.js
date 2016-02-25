@@ -45,6 +45,7 @@ class App extends Component {
         type="static"
         negotiatePan={true}
         openDrawerOffset={100}
+        panOpenMask={0.10}
         styles={{main: {shadowColor: "#000000", shadowOpacity: 0.4, shadowRadius: 3}}}
         tweenHandler={Drawer.tweenPresets.parallax}
         content={
