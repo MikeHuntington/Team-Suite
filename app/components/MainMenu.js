@@ -3,7 +3,10 @@
 import React, {View, Image, Text, TouchableHighlight, ScrollView, StyleSheet, Component} from 'react-native';
 import MenuButton from './MenuButton';
 import Challenges from '../challenges/Challenges';
+import ShoutOuts from '../shoutouts/ShoutOuts';
+import Meetup from '../meetup/Meetup';
 import Profile from '../profile/Profile';
+import Rewards from '../rewards/Rewards';
 import Events from '../lib/events';
 
 class MainMenu extends Component {
@@ -20,10 +23,9 @@ class MainMenu extends Component {
           <Image style={styles.profileImage} source={require('../assets/profile-image.jpg')}></Image>
         </TouchableHighlight>
         <MenuButton icon="android-bicycle" view={Challenges}>Challenges</MenuButton>
-        <MenuButton icon="speakerphone">Shout Outs</MenuButton>
-        <MenuButton icon="person-stalker">Meetup</MenuButton>
-        <MenuButton icon="chatboxes">Discuss</MenuButton>
-        <MenuButton icon="ribbon-a">Rewards</MenuButton>
+        <MenuButton icon="speakerphone" view={ShoutOuts}>Shout Outs</MenuButton>
+        <MenuButton icon="person-stalker" view={Meetup}>Meetup</MenuButton>
+        <MenuButton icon="ribbon-a" view={Rewards}>Rewards</MenuButton>
         <MenuButton icon="gear-b">Settings</MenuButton>
       </ScrollView>
     )

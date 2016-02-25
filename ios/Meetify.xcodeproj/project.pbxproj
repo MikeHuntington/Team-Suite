@@ -35,6 +35,9 @@
 		A66560A9F6104E2B9D787170 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0F76AD6F3933470EA0209F16 /* Foundation.ttf */; };
 		C7799E2337D94F3FB319F456 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C125C976A034D99B22927B0 /* Zocial.ttf */; };
 		CA2CF86D149A49AA85A8F357 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4FAF69240529412FBC84AD07 /* Entypo.ttf */; };
+		E0AC0467D3BB4518B248D278 /* libRNCalendarReminders.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3D1E0CE7CB4E239422F086 /* libRNCalendarReminders.a */; };
+		ECDC4F121C7EBB66002C639C /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECDC4F101C7EBB66002C639C /* EventKit.framework */; };
+		ECDC4F131C7EBB66002C639C /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECDC4F111C7EBB66002C639C /* EventKitUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +132,13 @@
 			remoteGlobalIDString = A68BD7BC1BC31318005F02DF;
 			remoteInfo = RNBlur;
 		};
+		ECDC4F0D1C7EBB1B002C639C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 893CFC0B636F4924A6862CAC /* RNCalendarReminders.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RNCalendarReminders;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -162,12 +172,16 @@
 		6F108E9553B84173971EF563 /* libRNBlur.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNBlur.a; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		893CFC0B636F4924A6862CAC /* RNCalendarReminders.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNCalendarReminders.xcodeproj; path = "../node_modules/react-native-calendar-reminders/RNCalendarReminders.xcodeproj"; sourceTree = "<group>"; };
 		99EB4DA3DAB34CAF860536DC /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 0; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 		B8F7FB6C6CDF48699EB7018E /* RNBlur.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNBlur.xcodeproj; path = "../node_modules/react-native-blur/ios/RNBlur.xcodeproj"; sourceTree = "<group>"; };
 		C5024EC14EC04C19BE373F8D /* RNVectorIcons.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 0; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNVectorIcons.xcodeproj; path = "../node_modules/react-native-vector-icons/RNVectorIcons.xcodeproj"; sourceTree = "<group>"; };
 		D3DCB9BDA37A46F4A349A27F /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 0; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		D622F6B703BA42EFB00DF63B /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 0; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
+		DA3D1E0CE7CB4E239422F086 /* libRNCalendarReminders.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNCalendarReminders.a; sourceTree = "<group>"; };
 		E399176985154C59A0248C05 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 0; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
+		ECDC4F101C7EBB66002C639C /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		ECDC4F111C7EBB66002C639C /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +196,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECDC4F121C7EBB66002C639C /* EventKit.framework in Frameworks */,
+				ECDC4F131C7EBB66002C639C /* EventKitUI.framework in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
 				00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */,
@@ -194,6 +210,7 @@
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				837C3132F4424960B6C6093C /* libRNVectorIcons.a in Frameworks */,
 				3B2B07701D4D4B84A1B20A05 /* libRNBlur.a in Frameworks */,
+				E0AC0467D3BB4518B248D278 /* libRNCalendarReminders.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +361,7 @@
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				C5024EC14EC04C19BE373F8D /* RNVectorIcons.xcodeproj */,
 				B8F7FB6C6CDF48699EB7018E /* RNBlur.xcodeproj */,
+				893CFC0B636F4924A6862CAC /* RNCalendarReminders.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -359,6 +377,8 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				ECDC4F101C7EBB66002C639C /* EventKit.framework */,
+				ECDC4F111C7EBB66002C639C /* EventKitUI.framework */,
 				13B07FAE1A68108700A75B9A /* Meetify */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* MeetifyTests */,
@@ -382,6 +402,14 @@
 			isa = PBXGroup;
 			children = (
 				EC52615B1C78EA79001039BE /* libRNBlur.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ECDC4EFF1C7EBB1B002C639C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECDC4F0E1C7EBB1B002C639C /* libRNCalendarReminders.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -500,6 +528,10 @@
 					ProjectRef = B8F7FB6C6CDF48699EB7018E /* RNBlur.xcodeproj */;
 				},
 				{
+					ProductGroup = ECDC4EFF1C7EBB1B002C639C /* Products */;
+					ProjectRef = 893CFC0B636F4924A6862CAC /* RNCalendarReminders.xcodeproj */;
+				},
+				{
 					ProductGroup = 430110921C7809C700223EE4 /* Products */;
 					ProjectRef = C5024EC14EC04C19BE373F8D /* RNVectorIcons.xcodeproj */;
 				},
@@ -595,6 +627,13 @@
 			fileType = archive.ar;
 			path = libRNBlur.a;
 			remoteRef = EC52615A1C78EA79001039BE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		ECDC4F0E1C7EBB1B002C639C /* libRNCalendarReminders.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNCalendarReminders.a;
+			remoteRef = ECDC4F0D1C7EBB1B002C639C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -706,6 +745,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Meetify.app/Meetify";
@@ -728,6 +768,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Meetify.app/Meetify";
@@ -747,6 +788,7 @@
 					"$(SRCROOT)/../node_modules/react-native/React/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)/../node_modules/react-native-blur/ios",
+					"$(SRCROOT)/../node_modules/react-native-calendar-reminders",
 				);
 				INFOPLIST_FILE = Meetify/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -769,6 +811,7 @@
 					"$(SRCROOT)/../node_modules/react-native/React/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)/../node_modules/react-native-blur/ios",
+					"$(SRCROOT)/../node_modules/react-native-calendar-reminders",
 				);
 				INFOPLIST_FILE = Meetify/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -819,6 +862,7 @@
 					"$(SRCROOT)/../node_modules/react-native/React/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)/../node_modules/react-native-blur/ios",
+					"$(SRCROOT)/../node_modules/react-native-calendar-reminders",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -861,6 +905,7 @@
 					"$(SRCROOT)/../node_modules/react-native/React/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)/../node_modules/react-native-blur/ios",
+					"$(SRCROOT)/../node_modules/react-native-calendar-reminders",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;

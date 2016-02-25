@@ -39,11 +39,6 @@ class App extends Component {
   }
 
   render() {
-
-    if(!this.state.menuIcon) {
-      return false;
-    }
-
     return(
       <Drawer
         ref="drawer"

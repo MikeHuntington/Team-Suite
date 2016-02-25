@@ -37,7 +37,7 @@ class Challenges extends Component {
 
         <Image style={styles.challengeImage} source={require('../assets/retail.jpg')}>
           <View style={styles.challengeTextHolder}>
-            <Text style={styles.challengeText}>Rewards Signup</Text>
+            <Text style={styles.challengeText}>Customer Rewards Signup</Text>
           </View>
         </Image>
 

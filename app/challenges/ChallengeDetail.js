@@ -98,15 +98,9 @@ class ChallengeDetail extends Component {
         flex:1
       },
       img:{
-        height:100,
-        width:100,
-        borderRadius:50
-      },
-      shout:{
-        flex:1,
-        fontSize:18,
-        padding:10,
-        paddingTop:0
+        height:90,
+        width:90,
+        borderRadius:45
       },
       rankHolder:{
         position:'relative'
