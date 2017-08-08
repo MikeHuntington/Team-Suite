@@ -89,7 +89,7 @@ class App extends Component {
     this.refs.drawer.toggle();
     /*
     var username = "mellomike";
-    var pass = "olympus";
+    var pass = "password";
 
     Parse.User.logIn(username, pass, {
       success: (user) => { console.log("loggedIn", user); },
